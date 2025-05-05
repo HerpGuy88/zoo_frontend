@@ -22,7 +22,6 @@ function UserSelector(props) {
       aria-label="Select your name to login"
       value={selected}
       onChange={({ target }) => {
-        // console.log(target.value);
         onSelectionChange(target.value);
       }}
     >

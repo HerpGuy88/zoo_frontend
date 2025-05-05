@@ -25,7 +25,6 @@ export default function Home() {
               <UserSelector
                 selected={selected}
                 onSelectionChange={(newVal) => {
-                  console.log("selected", newVal);
                   setSelected(newVal);
                 }}
               />

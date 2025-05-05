@@ -5,7 +5,6 @@ const useBehaviorStore = create((set) => ({
   getAllBehaviors: async (baseURL) => {
     const data = await fetch(`${baseURL}behaviors/`);
     const parsedData = await data.json();
-    console.log(parsedData);
     set({ behaviors: parsedData });
   },
 }));

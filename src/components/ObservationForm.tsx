@@ -13,10 +13,6 @@ function ObservationForm() {
   const [behavior, setBehavior] = useState("");
 
   const validate = function () {
-    console.log(animal?.length && animal?.length > 1);
-    console.log(
-      Object.values(behaviors).filter((x) => String(x.id) === String(behavior))
-    );
     if (
       animal?.length &&
       animal?.length > 1 &&
@@ -34,7 +30,6 @@ function ObservationForm() {
   }, [behavior, animal]);
 
   const handleSubmit = () => {
-    console.log("hi");
     submitObservation(process.env.NEXT_PUBLIC_BASE_URL, {
       behavior_id: behavior,
       animal_name: animal,
