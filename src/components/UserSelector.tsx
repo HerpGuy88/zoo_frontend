@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useUserStore } from "../hooks";
 import { Form } from "react-bootstrap";
 
-function CurrentUserSelector(props) {
+function UserSelector(props) {
   const { selected, onSelectionChange, ...rest } = props;
   const { users, getAllUsers } = useUserStore();
 
@@ -22,6 +22,7 @@ function CurrentUserSelector(props) {
       aria-label="Select your name to login"
       value={selected}
       onChange={({ target }) => {
+        // console.log(target.value);
         onSelectionChange(target.value);
       }}
     >
@@ -33,4 +34,4 @@ function CurrentUserSelector(props) {
   );
 }
 
-export default CurrentUserSelector;
+export default UserSelector;

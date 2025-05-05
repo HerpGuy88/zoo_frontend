@@ -1,5 +1,5 @@
 "use client";
-import CurrentUserSelector from "@/components/CurrentUserSelector";
+import { UserSelector } from "@/components";
 import { useRouter } from "next/navigation";
 import { useUserStore } from "@/hooks";
 import { useAuthState } from "@/hooks";
@@ -16,15 +16,18 @@ export default function Home() {
       <div className="text-center mt-4 col-md-6 mx-auto">
         <h1 className="text-success">Welcome to the behavioral notes app!</h1>
         <p>
-          Please select your name form the dropdown and click the button to log
+          Please select your name from the dropdown and click the button to log
           in.
         </p>
         <Container>
           <Row>
             <Col xs={9}>
-              <CurrentUserSelector
+              <UserSelector
                 selected={selected}
-                onSelectionChange={setSelected}
+                onSelectionChange={(newVal) => {
+                  console.log("selected", newVal);
+                  setSelected(newVal);
+                }}
               />
             </Col>
             <Col sx={3}>
