@@ -1,29 +1,27 @@
 # zoo_frontend
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This frontend is built uses the Next.js framework and was initiated from template packaged with Next.js using `create-next-app`.
 
-## Getting Started
+As such, there are some unused assets that should probably be cleaned up, but at this early stage in development, I appreciate having them for reference.
 
-First, run the development server:
+I configured the app to run on port 8080 so it can be run simulataneously and on the same machine as the backend.
 
-```bash
-npm run dev
+#Installation Instructions:
 
-```
+1. Download the Source Code
+   Unzip the provided archive (which can also be downloaded from GitHub)
+   OR
+   Clone the GitHub repository to your workspace.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Now run the following to install dependencies:
 
-## Learn More
+   ```
+   npm i
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. And that's all that is required to install the frontend! To start the app, run the following command from the root directory of the project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```
